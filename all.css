@@ -1,0 +1,69 @@
+ @charset "UTF-8";
+ /*DROP DOWN STYLING  */
+        ul {
+       
+            list-style: none;
+           
+            color:white;
+
+        }
+        
+        ul li{
+            display: inline-block;
+            position: relative;
+
+        }
+        ul li a{
+            display: block;
+           background-color:black;
+            color: white;
+            text-decoration: none;
+        }
+        ul li .drop li{
+            display: block;
+
+        }
+        ul li .drop{
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+         ul li a:hover{
+             background:rebeccapurple;
+
+        } 
+        ul li:hover .drop{
+            display: block;
+        }
+        a{
+        text-decoration: none;
+        }
+        nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: large;
+        border: 1px solid black;
+        margin: 20px;
+        }
+        .add{
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+        }
+        .edit{
+        background-color: green;
+        color: white;
+        padding: 3px;
+        margin: 5px;
+        }
+         .delete{
+        background-color: red;
+        color: white;
+        padding: 3px;
+         margin: 5px;
+        }
